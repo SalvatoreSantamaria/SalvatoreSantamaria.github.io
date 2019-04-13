@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 
-body {
+ body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
   color: #868e96;
@@ -16,7 +16,6 @@ body {
     padding-left: 17rem;
   }
 }
-
 
 h1,
 h2,
@@ -177,7 +176,9 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  /* background-color: #BD5D38 !important; */
+  background:linear-gradient(180deg, #BA4A00 75%, #BA4A00 100%);
+  box-shadow:0px 0px 7px 4px;
 }
 
 .text-primary {
@@ -192,10 +193,29 @@ a:hover, a:focus, a:active {
   color: #824027;
 }
 
+.btn-primary {
+  color: #006BA6;
+  background-color: white;
+  border-color: #006BA6;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  color: white;
+  background-color: #006BA6;
+  border-color: #006BA6;
+}
 
 
 
-/*common_default.css*/
+
+  /* background-color: #bd5d38 !important; */
+  /* background:linear-gradient(180deg, #bd5d38 75%, #bd5d38 100%);
+  box-shadow:0px 0px 7px 4px; */
+
+
+
+
+/* common_default.css
 .container{
 	width: 960px !important;
 }
@@ -251,6 +271,7 @@ a:hover, a:focus, a:active {
 /*end common_default.css*/
 
 /*common.css*/
+/*
 .navbar{
 	min-height: 20px;
     margin-bottom: 0px;
@@ -318,10 +339,11 @@ a:hover, a:focus, a:active {
     height: 11px;
     width: 12px;
 }
+*/
 /*end common.css*/
 
 /*bootstrap-theme.css*/
-
+/*
 .navbar-default {
   background-image: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%);
   background-image:         linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
@@ -367,7 +389,7 @@ a:hover, a:focus, a:active {
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   border-radius: 0;
-}
+}*/
 /*bootstrap-theme.css*/
 
 /*!
@@ -389,7 +411,7 @@ h6 {
   font-weight: 700;
   font-family: 'Montserrat';
 } */
-
+/*
 hr.star-light,
 hr.star-dark {
   max-width: 15rem;
@@ -753,4 +775,4 @@ a:focus, a:hover, a:active {
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
   background-color: #1a252f;
   border-color: #1a252f;
-}
+} */
