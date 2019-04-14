@@ -176,8 +176,8 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  /* background-color: #BD5D38 !important; */
-  background:linear-gradient(180deg, #BA4A00 75%, #BA4A00 100%);
+  background-color: #BD5D38 !important;
+  /* background:linear-gradient(180deg, #BA4A00 75%, #BA4A00 100%); */
   box-shadow:0px 0px 7px 4px;
 }
 
@@ -205,7 +205,18 @@ a:hover, a:focus, a:active {
   border-color: #006BA6;
 }
 
+.pet-shelter:hover {
+  opacity: 0;
+}
 
+.pet-shelter {
+  background: white;
+  position: absolute;
+}
+
+/*begin freelancer css*/
+
+/*end freelancer css*/
 
 
   /* background-color: #bd5d38 !important; */
