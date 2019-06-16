@@ -1,0 +1,52 @@
+body{
+  background-color:white;
+  
+  }
+  
+  h1{
+  color: black;
+  font-family: "Calibri";
+  }
+  
+  p{
+    color: #00b2c8;
+    font-family: "Calibri";
+    font-style: Italic;
+    font-size:20px;
+  }
+  img{
+    padding:20px;
+  }
+  
+  .main{
+
+    width:550px;
+    margin-right:auto;
+    margin-left:auto;
+    height:auto;
+
+  }
+
+
+  .quotes{
+    background-color:#fcd53c;
+    width:550px;
+    margin-right:auto;
+    margin-left:auto;
+    border-color:black;
+    border-style:solid;
+    border-radius:50px;
+    margin-top:20px;
+    padding:20px;
+    height:auto;
+    color:#ed232f;
+  }
+  .quote{
+    font-size:30px;
+    
+  }
+  .author{
+    font-size:20px;
+    font-style:italic;
+    color: darkturquiose;
+  }
