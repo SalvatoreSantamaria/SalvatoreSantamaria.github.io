@@ -57,10 +57,13 @@ p.lead {
 
 #sideNav .navbar-toggler:focus {
   outline-color: #d48a6e;
+  box-shadow:0px 0px 7px 4px;
 }
 
 .navbar {
+  height: 48px;
   padding: 0px;
+  box-shadow:4px 0px 7px 4px;
 }
 
 .bg-primary {
@@ -111,6 +114,10 @@ a:hover, a:focus, a:active {
   color: #824027;
   background-color: #dae0e5 !important;
 }
+
+.intro-text {
+  padding: 20px;
+}
 /*end added*/
 
 
@@ -122,6 +129,7 @@ a:hover, a:focus, a:active {
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
   transition: margin .25s ease-out;
+  box-shadow:0px 0px 7px 4px;
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -139,6 +147,8 @@ a:hover, a:focus, a:active {
 
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
+  box-shadow:0px 0px 0px 0px;
+  
 }
 
 @media (min-width: 768px) {
