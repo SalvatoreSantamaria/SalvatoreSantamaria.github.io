@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+img {
+  max-height: 300px;
+  max-width: 525px;
+  height: 100%;
+  width:100%;
+  object-fit:cover;
+  /* other option is object-fit: contain; */
+}
+
+.dog-container {
+  position: relative;
+  height: 30rem;
+  background-color: #fff8dc;
+  box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.75);
+}
+
+.dog-name {
+  padding-top: 20px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.row {
+  padding: 15px;
+}
