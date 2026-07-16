@@ -360,17 +360,39 @@ h2 {
   background: #fff;
 }
 
+.code-section {
+  margin-top: 1.25rem;
+}
+
+.code-section-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.code-section-header .label {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--muted);
+}
+
 .code-block {
   font-family: var(--mono);
   font-size: 0.78rem;
   line-height: 1.55;
   background: #1c1917;
   color: #fafaf9;
-  padding: 1rem;
+  padding: 1rem 1.1rem;
   border-radius: 10px;
   overflow-x: auto;
   white-space: pre;
-  margin: 0.75rem 0 0;
+  margin: 0;
 }
 
 .explain-body p {

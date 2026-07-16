@@ -1,21 +1,11 @@
-export function ExplainPanel({
-  summary,
-  wrongCode,
-  rightCode,
-}: {
-  summary: string;
-  wrongCode: string;
-  rightCode: string;
-}) {
+/** Short note for explanation-only mistakes; code lives in MistakeShell. */
+export function ExplainPanel({ summary }: { summary: string }) {
   return (
     <div className="explain-body">
       <p>{summary}</p>
-      <p className="demo-note">Wrong pattern</p>
-      <pre className="code-block">{wrongCode}</pre>
-      <p className="demo-note" style={{ marginTop: "1rem" }}>
-        Right pattern
+      <p className="demo-note">
+        Toggle Wrong / Right above to compare the annotated code samples.
       </p>
-      <pre className="code-block">{rightCode}</pre>
     </div>
   );
 }

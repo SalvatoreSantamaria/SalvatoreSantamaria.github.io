@@ -1,5 +1,6 @@
 import { useSearchParams, Link } from "react-router-dom";
 import { getCategory, type Mistake } from "../lib/mistakes";
+import { snippets } from "../lib/snippets";
 import { StatusBadge } from "./StatusBadge";
 
 type Props = {
@@ -12,6 +13,8 @@ export function MistakeShell({ mistake, wrong, right }: Props) {
   const [searchParams, setSearchParams] = useSearchParams();
   const mode = searchParams.get("mode") === "right" ? "right" : "wrong";
   const category = getCategory(mistake.category);
+  const sample = snippets[mistake.slug];
+  const code = sample ? (mode === "wrong" ? sample.wrong : sample.right) : null;
 
   function setMode(next: "wrong" | "right") {
     const params = new URLSearchParams(searchParams);
@@ -60,6 +63,18 @@ export function MistakeShell({ mistake, wrong, right }: Props) {
       </div>
 
       <div className="demo-stage">{mode === "wrong" ? wrong : right}</div>
+
+      {code && (
+        <section className="code-section">
+          <div className="code-section-header">
+            <p className="label">{mode === "wrong" ? "Wrong code" : "Right code"}</p>
+            <p className="demo-note" style={{ margin: 0 }}>
+              Comments explain why this is {mode === "wrong" ? "wrong" : "right"}.
+            </p>
+          </div>
+          <pre className="code-block">{code}</pre>
+        </section>
+      )}
     </article>
   );
 }
